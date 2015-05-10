@@ -160,7 +160,7 @@ class Select2Mixin(object):
         This wraps ``inner_code`` string inside the following code block::
 
             <script type="text/javascript">
-                jQuery(function ($) {
+                django.jQuery(function ($) {
                     // inner_code here
                 });
             </script>
@@ -169,7 +169,7 @@ class Select2Mixin(object):
         """
         return """
                 <script type="text/javascript">
-                    jQuery(function ($) {
+                    django.jQuery(function ($) {
                         %s
                     });
                 </script>
